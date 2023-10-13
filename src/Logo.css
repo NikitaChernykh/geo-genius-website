@@ -3,9 +3,19 @@
     top: 0;
     width: 300px;
     height: 200px;
-    background-image: url('Logo.png');
+    background-image: url('Images/Logo.png');
     background-size: cover;
     z-index: 3; /* Ensure the globe is on top of the background */
+}
+
+.coming-soon {
+    font-size: 3rem;
+    color: white;
+    text-align: left;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin: 160% auto;
 }
 
 
@@ -15,7 +25,7 @@
         top: 0;
         width: 500px;
         height: 300px;
-        background-image: url('Logo.png');
+        background-image: url('Images/Logo.png');
         background-size: cover;
         z-index: 3; /* Ensure the globe is on top of the background */
     }

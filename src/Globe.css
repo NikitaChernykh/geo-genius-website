@@ -1,13 +1,9 @@
 
 /* Globe.css */
-.globe-container {
-    position: relative;
-  }
-  
   .globe {
     width: 200px;
     height: 200px;
-    background-image: url('Planet.png');
+    background-image: url('Images/Planet.png');
     background-size: cover;
     /* animation: zoom 3s ease-in-out; */
     position: absolute;
@@ -58,7 +54,7 @@
     .globe {
         width: 300px;
         height: 300px;
-        background-image: url('Planet.png');
+        background-image: url('Images/Planet.png');
         background-size: cover;
         animation: float 5s ease-in-out infinite;
         position: absolute;

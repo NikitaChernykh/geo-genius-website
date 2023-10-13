@@ -1,12 +1,5 @@
 /* App.css */
-.App {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
+
 
 .background {
   width: 100%;
@@ -16,15 +9,13 @@
   z-index: 0; /* Put the background behind the globe */
 }
 
-
-
 .globe-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .content-container {
@@ -44,4 +35,99 @@
   align-items: center;
 }
 
-/* ... (rest of your CSS remains the same) */
+/* move to separate section later  */
+
+.footer {
+  background-color: #071D36;
+  color: #fff;
+  padding: 20px;
+  
+}
+
+.links {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divider {
+  border-top: 1px solid #555;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+  
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* move to separate section later  */
+
+.column-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; /* Adjust the padding as needed */
+  background-color: #071D36;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px; /* Adjust the margin for spacing between columns */
+  text-align: center;
+}
+
+.column img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.column h2 {
+  font-size: 1.5rem;
+  margin-top: 10px; /* Adjust the margin as needed */
+  color: white;
+  text-align: left;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+}
+
+.column p {
+  font-size: 1rem;
+  color: white;
+  text-align: left;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+}
+
+
+.copyright {
+  color: rgb(181, 181, 181);
+}
+.legal-link {
+  color: rgb(181, 181, 181);
+  margin-right: 2px;
+  margin-left: 2px;
+}
