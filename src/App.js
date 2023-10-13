@@ -19,19 +19,19 @@ function App() {
           <Globe />
         </div>
       </div>
-      <section class="column-section">
-        <div class="column">
+      <section className="column-section">
+        <div className="column">
           <img src={require('./Images/Map.png')} alt="map" />
           <h2>Explore the world map</h2>
           <p>Explore an entirely new world map designed for geography learning! Each continent serves as a distinct learning section, allowing you to focus on individual regions.</p>
         </div>
-        <div class="column">
+        <div className="column">
           <img src={require('./Images/Canada.png')} alt="capital" />
           <h2>Learn Capitals</h2>
           <p>Discover a fun and interactive way to learn the capitals of countries from around the world, where you can test your knowledge of global city names.</p>
         </div>
     
-        <div class="column">
+        <div className="column">
           <img src={require('./Images/Geo.png')} alt="geo" />
           <h2>Become the Geo Genius</h2>
           <p>Pass all the tests and test your knowledge to claim the Geo Genius status as you embark on a journey to master world geography, identifying capitals and more through exciting challenges and quizzes.</p>

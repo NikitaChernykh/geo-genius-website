@@ -9,17 +9,28 @@
 }
 
 .coming-soon {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     text-align: left;
     font-family: 'Kanit', sans-serif;
     font-weight: 900;
     text-align: center;
-    margin: 160% auto;
+    margin: 210% auto;
 }
 
 
 @media (min-width: 768px) {
+
+    .coming-soon {
+        font-size: 3rem;
+        color: white;
+        text-align: left;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        margin: 160% auto;
+    }
+
     .logo {
         position: absolute;
         top: 0;

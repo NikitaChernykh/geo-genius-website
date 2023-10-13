@@ -85,18 +85,19 @@
 /* move to separate section later  */
 
 .column-section {
-  display: flex;
+  display: block;
   justify-content: space-between;
   padding: 20px; /* Adjust the padding as needed */
   background-color: #071D36;
   padding-top: 100px;
   padding-bottom: 30px;
+  
 }
 
 .column {
-  flex: 1;
-  margin: 0 10px; /* Adjust the margin for spacing between columns */
+  display: block;
   text-align: center;
+  width: 100%;
 }
 
 .column img {
@@ -130,4 +131,23 @@
   color: rgb(181, 181, 181);
   margin-right: 2px;
   margin-left: 2px;
+}
+
+@media (min-width: 768px) {
+
+  .column-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; /* Adjust the padding as needed */
+    background-color: #071D36;
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .column {
+    flex: 1;
+    margin: 0 10px; /* Adjust the margin for spacing between columns */
+    text-align: center;
+    width: 100px;
+  }
 }

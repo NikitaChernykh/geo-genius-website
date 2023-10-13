@@ -1,6 +1,6 @@
 /* Stars.css */
 .stars {
-    width: 500px; /* Adjust the width as needed to make stars larger */
+    width: 100%; /* Adjust the width as needed to make stars larger */
     height: 500px; /* Adjust the height accordingly */
     position: absolute;
     background-image: url('Images/Stars.png'); /* Replace with your stars image */
