@@ -56,8 +56,8 @@ function App() {
         </div>
         <div className="copyright">
           &copy; 2023 Chernika Digital - FZCO. All Rights Reserved.
-            <a href="https://www.chernikadigital.com/privacy-policy" target='_blank' rel="noopener" className='legal-link'>Privacy Policy</a>
-            <a href="https://www.chernikadigital.com/terms-of-service" target='_blank' rel="noopener" className='legal-link'>Terms of Use</a>
+            <a href="https://www.chernikadigital.com/privacy-policy" target='_blank' rel="noreferrer" className='legal-link'>Privacy Policy</a>
+            <a href="https://www.chernikadigital.com/terms-of-service" target='_blank' rel="noreferrer" className='legal-link'>Terms of Use</a>
         </div>
       </footer>
     </div>
