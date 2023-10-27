@@ -1,9 +1,9 @@
 // RepeatingImage.js
 import React from 'react';
-import './RepeatingImage.css';
+import styles from './repeating-image.module.css';
 
 function RepeatingImage() {
-  return <div className="repeating-image"></div>;
+  return <div className={styles.repeatingImage}></div>;
 }
 
 export default RepeatingImage;

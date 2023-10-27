@@ -1,6 +1,3 @@
-/* App.css */
-
-
 .background {
   width: 100%;
   height: 100%;
@@ -9,7 +6,7 @@
   z-index: 0; /* Put the background behind the globe */
 }
 
-.globe-container {
+.globeContainer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -18,7 +15,7 @@
   min-height: 100vh;
 }
 
-.content-container {
+.contentContainer {
   position: relative;
   display: flex;
   align-items: center;
@@ -26,7 +23,7 @@
   height: 100%;
 }
 
-.stars-container {
+.starsContainer {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -38,6 +35,7 @@
 /* move to separate section later  */
 
 .footer {
+  font-family: 'Kanit', sans-serif;
   background-color: #071D36;
   color: #fff;
   padding: 20px;
@@ -55,27 +53,15 @@
   margin-bottom: 20px;
 }
 
-.social-icons {
+.socialIcons {
   display: flex;
 }
 
-.footer-links {
+.footerLinks {
   display: flex;
 }
 
-.social-icons a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 20px;
-  
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-}
+.footerLinks 
 
 .copyright {
   margin-top: 20px;
@@ -84,7 +70,7 @@
 
 /* move to separate section later  */
 
-.column-section {
+.columnSection {
   display: block;
   justify-content: space-between;
   padding: 20px; /* Adjust the padding as needed */
@@ -100,13 +86,23 @@
   width: 100%;
 }
 
-.column img {
-  max-width: 100%;
+.columnImage {
+  width: 100%;
+  max-width: 300px;
   height: 200px;
   border-radius: 12px;
 }
 
-.column h2 {
+.geoImage {
+  width: 100%;
+  max-width: 230px;
+  height: 200px;
+  border-radius: 12px;
+}
+
+
+
+.columnTitle{
   font-size: 1.5rem;
   margin-top: 10px; /* Adjust the margin as needed */
   color: white;
@@ -115,7 +111,7 @@
   font-weight: 600;
 }
 
-.column p {
+.columnText {
   font-size: 1rem;
   color: white;
   text-align: left;
@@ -127,7 +123,7 @@
 .copyright {
   color: rgb(181, 181, 181);
 }
-.legal-link {
+.legalLink {
   color: rgb(181, 181, 181);
   margin-right: 2px;
   margin-left: 2px;
@@ -135,7 +131,7 @@
 
 @media (min-width: 768px) {
 
-  .column-section {
+  .columnSection {
     display: flex;
     justify-content: space-between;
     padding: 20px; /* Adjust the padding as needed */

@@ -3,7 +3,7 @@
     width: 100%; /* Adjust the width as needed to make stars larger */
     height: 500px; /* Adjust the height accordingly */
     position: absolute;
-    background-image: url('Images/Stars.png'); /* Replace with your stars image */
+    background-image: url('../../assets/stars.png'); /* Replace with your stars image */
     background-size: cover;
     animation: zoom1 15s ease-in-out; /* Make the animation continuous */
     transform: scale(1.5);
@@ -31,7 +31,7 @@
     width: 1000px; /* Adjust the width as needed to make stars larger */
     height: 1000px; /* Adjust the height accordingly */
     position: absolute;
-    background-image: url('Images/Stars.png'); /* Replace with your stars image */
+    background-image: url('../../assets/stars.png'); /* Replace with your stars image */
     background-size: cover;
     animation: zoom1 3s ease-in-out; /* Make the animation continuous */
     transform: scale(1.5);
