@@ -8,7 +8,7 @@
     z-index: 3; /* Ensure the globe is on top of the background */
 }
 
-.coming-soon {
+.comingSoon {
     font-size: 2rem;
     color: white;
     text-align: left;
@@ -21,14 +21,14 @@
 
 @media (min-width: 768px) {
 
-    .coming-soon {
+    .comingSoon {
         font-size: 3rem;
         color: white;
         text-align: left;
         font-family: 'Kanit', sans-serif;
         font-weight: 900;
         text-align: center;
-        margin: 160% auto;
+        margin: 200% auto;
     }
 
     .logo {

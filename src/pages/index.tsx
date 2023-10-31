@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import logo from '../assets/logo.png'
+import map from '../assets/map.png'
 import canada from '../assets/canada.png'
 import geo from '../assets/geo.png'
 import RepeatingImage from '../components/repeating-image/repeating-image'
@@ -25,7 +25,7 @@ function HomePage() {
       </div>
       <section className={styles.columnSection}>
         <div className={styles.column}>
-          <Image src={logo} className={styles.columnImage} alt="logo" />
+          <Image src={map} className={styles.columnImage} alt="map" />
           <h2 className={styles.columnTitle}>Explore the world map</h2>
           <p className={styles.columnText}>
             Explore an entirely new world map designed for geography learning!
