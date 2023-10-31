@@ -7,7 +7,7 @@ import RepeatingImage from '../components/repeating-image/repeating-image'
 import Stars from '../components/stars/stars'
 import Globe from '../components/globe/globe'
 import Logo from '../components/logo/logo'
-import styles from './index.module.css'
+import styles from './index.module.scss'
 
 function HomePage() {
   return (
