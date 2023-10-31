@@ -6,8 +6,7 @@ import RepeatingImage from "../components/repeating-image/repeating-image"
 import Stars from "../components/stars/stars";
 import Globe from "../components/globe/globe";
 import Logo from "../components/logo/logo"; 
-import styles from "./homepage.module.css"
-
+import styles from "./index.module.css"
 
 function HomePage() {
   return (
@@ -61,8 +60,15 @@ function HomePage() {
       {/* TODO: convert copyright to component with function to auto-update the year */}
       <div className={styles.copyright}>
         &copy; 2023 Chernika Digital - FZCO. All Rights Reserved. 
-          <a href="https://www.chernikadigital.com/privacy-policy" target='_blank' rel="noreferrer" className='legalLink'>Privacy Policy</a>
-          <a href="https://www.chernikadigital.com/terms-of-service" target='_blank' rel="noreferrer" className='legalLink'>Terms of Use</a>
+          <a 
+          href="https://www.chernikadigital.com/privacy-policy" 
+          target='_blank' 
+          rel="noreferrer" 
+          className='legalLink'>Privacy Policy</a>
+          <a href="https://www.chernikadigital.com/terms-of-service" 
+          target='_blank' 
+          rel="noreferrer" 
+          className='legalLink'>Terms of Use</a>
       </div>
     </footer>
   </div>
