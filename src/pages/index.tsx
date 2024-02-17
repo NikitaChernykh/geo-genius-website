@@ -4,10 +4,10 @@ import map from '../assets/map.png'
 import canada from '../assets/canada.png'
 import geo from '../assets/geo.png'
 import RepeatingImage from '../components/repeating-image/repeating-image'
-import Stars from '../components/stars/stars'
 import Globe from '../components/globe/globe'
 import Logo from '../components/logo/logo'
 import styles from './index.module.scss'
+import Footer from '../components/footer/footer'
 
 function HomePage() {
   return (
@@ -15,9 +15,6 @@ function HomePage() {
       <div className={styles.background}></div>
       <RepeatingImage />
       <div className={styles.contentContainer}>
-        <div className={styles.starsContainer}>
-          <Stars />
-        </div>
         <div className={styles.globeContainer}>
           <Logo />
           <Globe />
@@ -54,30 +51,7 @@ function HomePage() {
           </p>
         </div>
       </section>
-      <footer className={styles.footer}>
-        <div className={styles.divider}></div>
-        <div className={styles.links}>{/* TODO: Add social links */}</div>
-        {/* TODO: convert copyright to component with function to auto-update the year */}
-        <div className={styles.copyright}>
-          &copy; 2023 Chernika Digital - FZCO. All Rights Reserved.
-          <a
-            href="https://www.chernikadigital.com/privacy-policy"
-            target="_blank"
-            rel="noreferrer"
-            className="legalLink"
-          >
-            Privacy Policy
-          </a>
-          <a
-            href="https://www.chernikadigital.com/terms-of-service"
-            target="_blank"
-            rel="noreferrer"
-            className="legalLink"
-          >
-            Terms of Use
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

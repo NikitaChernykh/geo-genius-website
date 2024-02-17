@@ -26,53 +26,6 @@
   height: 100%;
 }
 
-.starsContainer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* move to separate section later  */
-
-.footer {
-  font-family: 'Kanit', sans-serif;
-  background-color: $primary-darkest;
-  color: #fff;
-  padding: 20px;
-  
-}
-
-.links {
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.divider {
-  border-top: 1px solid $text-darkest;
-  margin-bottom: 20px;
-}
-
-.socialIcons {
-  display: flex;
-}
-
-.footerLinks {
-  display: flex;
-}
-
-.footerLinks 
-
-.copyright {
-  margin-top: 20px;
-  font-size: 14px;
-}
-
-/* move to separate section later  */
-
 .columnSection {
   display: block;
   justify-content: space-between;

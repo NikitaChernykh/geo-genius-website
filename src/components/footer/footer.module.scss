@@ -1,0 +1,33 @@
+@import './../../styles/variables.module.scss';
+
+.footer {
+  font-family: 'Kanit', sans-serif;
+  background-color: $primary-darkest;
+  color: #fff;
+  padding: 20px;
+  
+}
+
+.links {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.divider {
+  border-top: 1px solid $text-darkest;
+  margin-bottom: 20px;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.footerLinks {
+  display: flex;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
