@@ -8,7 +8,7 @@ const Newsletter = () => {
     'success' | 'error' | 'loading' | 'idle'
   >('idle')
   const [responseMsg, setResponseMsg] = useState<string>('')
-  const [statusCode, setStatusCode] = useState<number>()
+  const [, setStatusCode] = useState<number>()
 
   const handleSubscribe = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
