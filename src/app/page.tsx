@@ -14,15 +14,13 @@ export default function HomePage() {
     <main className="homepage">
       <div className={styles.background}>
         <div className={styles.content}>
-          <div className={styles.titleSection}>
-            <Image
-              src={logo}
-              className={styles.logo}
-              alt="geogenius"
-              priority={true}
-            />
-            <h2 className={`${styles.title} ${fontKanit.variable} font-sans`}>
-              Best way to learn geography.
+          <div className={styles.logo}>
+            <Image src={logo} alt="geogenius" priority={true} />
+          </div>
+
+          <div className={styles.title}>
+            <h2 className={`${fontKanit.variable} font-sans`}>
+              Best way to learn geography
             </h2>
           </div>
           <Image

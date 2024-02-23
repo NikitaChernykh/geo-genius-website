@@ -17,19 +17,23 @@
   outline: 1px solid red;
 }
 
-.titleSection {
-}
-
 .title {
-  font-family: var(--font-kanit);
-  font-weight: $semi-bold;
-  color: #fff;
+  margin-top: -60px; // overlap image spacing
+  h2 {
+    font-family: var(--font-kanit);
+    font-weight: $semi-bold;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+  }
 }
 
 .logo {
-  width: 300px;
-  height: 200px;
-  outline: 1px solid red;
+  margin: 0 auto 0 auto;
+  img {
+    width: 362px;
+    height: 259px;
+  }
 }
 
 .planet {
@@ -54,6 +58,12 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
+  .title {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
   .planet {
     width: 400px;
     height: 400px;
