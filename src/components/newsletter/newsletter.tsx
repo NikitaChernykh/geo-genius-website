@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { FormEvent, useState } from 'react'
 import PrimaryButton from '../buttons/primary-button'
+import TextInput from '../inputs/text-input'
 import styles from './newsletter.module.scss'
 
 const Newsletter = () => {
@@ -32,9 +33,9 @@ const Newsletter = () => {
 
   return (
     <form onSubmit={handleSubscribe} noValidate className={styles.form}>
-      <input
-        type="email"
+      <TextInput
         placeholder="Email"
+        type="email"
         value={email}
         onChange={e => setEmail(e.target.value)}
         disabled={status == 'loading'}
