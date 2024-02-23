@@ -1,11 +1,16 @@
 @import './../../styles/variables.module.scss';
 
 .error {
-  font-family: 'Kanit', sans-serif;
+  font-family: var(--font-kanit);
   color: red;
 }
 
 .success {
-  font-family: 'Kanit', sans-serif;
+  font-family: var(--font-kanit);
   color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }

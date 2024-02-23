@@ -1,32 +1,33 @@
-@import './../../styles/variables.module.scss';
+@import './../../../styles/variables.module.scss';
 
-.footer {
-  font-family: 'Kanit', sans-serif;
-  background-color: $primary-darkest;
-  color: #fff;
-  padding: 20px;
+.primaryButton {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  position: relative;
+  outline: 1px solid orange;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
 }
 
-.links {
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
+.topLayer {
+  width: 100px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.divider {
-  border-top: 1px solid $text-darkest;
-  margin-bottom: 20px;
-}
-
-.socialIcons {
-  display: flex;
-}
-
-.footerLinks {
-  display: flex;
-}
-
-.copyright {
-  margin-top: 20px;
-  font-size: 14px;
+.bottomLayer {
+  width: 100px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

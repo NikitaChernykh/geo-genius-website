@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { FormEvent, useState } from 'react'
+import PrimaryButton from '../buttons/primary-button'
 import styles from './newsletter.module.scss'
 
 const Newsletter = () => {
@@ -30,27 +31,21 @@ const Newsletter = () => {
   }
 
   return (
-    <form onSubmit={handleSubscribe} noValidate>
-      <div className="flex">
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          disabled={status == 'loading'}
-        />
-        <button type="submit" disabled={status == 'loading'}>
-          Subscribe
-        </button>
-      </div>
-      <div>
-        {status === 'success' ? (
-          <p className={styles.success}>{responseMsg}</p>
-        ) : null}
-        {status === 'error' ? (
-          <p className={styles.error}>{responseMsg}</p>
-        ) : null}
-      </div>
+    <form onSubmit={handleSubscribe} noValidate className={styles.form}>
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={e => setEmail(e.target.value)}
+        disabled={status == 'loading'}
+      />
+      <PrimaryButton buttonText="Subscribe" isLoading={status == 'loading'} />
+      {status === 'success' ? (
+        <p className={styles.success}>{responseMsg}</p>
+      ) : null}
+      {status === 'error' ? (
+        <p className={styles.error}>{responseMsg}</p>
+      ) : null}
     </form>
   )
 }

@@ -17,9 +17,19 @@
   outline: 1px solid red;
 }
 
+.titleSection {
+}
+
+.title {
+  font-family: var(--font-kanit);
+  font-weight: $semi-bold;
+  color: #fff;
+}
+
 .logo {
   width: 300px;
   height: 200px;
+  outline: 1px solid red;
 }
 
 .planet {
@@ -40,5 +50,13 @@
   }
   100% {
     transform: translate(-50%, -50%) translateY(0);
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .planet {
+    width: 400px;
+    height: 400px;
+    left: 200px;
   }
 }

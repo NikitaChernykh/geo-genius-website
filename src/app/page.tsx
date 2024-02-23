@@ -6,6 +6,7 @@ import About from '../components/about/about'
 import Footer from '../components/footer/footer'
 import Newsletter from '../components/newsletter/newsletter'
 import '../styles/globals.css'
+import fontKanit from './fonts'
 import styles from './page.module.scss'
 
 export default function HomePage() {
@@ -13,8 +14,23 @@ export default function HomePage() {
     <main className="homepage">
       <div className={styles.background}>
         <div className={styles.content}>
-          <Image src={logo} className={styles.logo} alt="geogenius" />
-          <Image src={planet} className={styles.planet} alt="planet earth" />
+          <div className={styles.titleSection}>
+            <Image
+              src={logo}
+              className={styles.logo}
+              alt="geogenius"
+              priority={true}
+            />
+            <h2 className={`${styles.title} ${fontKanit.variable} font-sans`}>
+              Best way to learn geography.
+            </h2>
+          </div>
+          <Image
+            src={planet}
+            className={styles.planet}
+            alt="planet earth"
+            priority={true}
+          />
           <Newsletter />
         </div>
       </div>
