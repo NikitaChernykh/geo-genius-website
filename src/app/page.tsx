@@ -14,21 +14,24 @@ export default function HomePage() {
     <main className="homepage">
       <div className={styles.background}>
         <div className={styles.content}>
-          <div className={styles.logo}>
-            <Image src={logo} alt="geogenius" priority={true} />
+          <div className={styles.top}>
+            <div className={styles.logo}>
+              <Image src={logo} alt="geogenius" priority={true} />
+            </div>
+
+            <div className={styles.title}>
+              <h2 className={`${fontKanit.variable} font-sans`}>
+                Best way to learn geography
+              </h2>
+            </div>
           </div>
 
-          <div className={styles.title}>
-            <h2 className={`${fontKanit.variable} font-sans`}>
-              Best way to learn geography
-            </h2>
+          <div className={styles.mid}>
+            <div className={styles.planet}>
+              <Image src={planet} alt="planet earth" />
+            </div>
           </div>
-          <Image
-            src={planet}
-            className={styles.planet}
-            alt="planet earth"
-            priority={true}
-          />
+
           <Newsletter />
         </div>
       </div>

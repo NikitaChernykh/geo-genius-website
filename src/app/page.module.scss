@@ -11,10 +11,9 @@
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   margin: auto;
   height: 100vh;
-  outline: 1px solid red;
 }
 
 .title {
@@ -29,7 +28,8 @@
 }
 
 .logo {
-  margin: 0 auto 0 auto;
+  margin: auto;
+  width: fit-content;
   img {
     width: 362px;
     height: 259px;
@@ -37,12 +37,28 @@
 }
 
 .planet {
-  margin: auto;
   position: relative;
-  width: 200px;
-  height: 200px;
   left: 100px;
+  top: 100px;
   animation: float 5s ease-in-out infinite;
+  img {
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    top: 100px;
+  }
+}
+
+.top {
+  flex: 0 0 auto;
+  height: 25%;
+}
+
+.mid {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 
 @keyframes float {
@@ -65,8 +81,13 @@
   }
 
   .planet {
-    width: 400px;
-    height: 400px;
     left: 200px;
+    top: 200px;
+    img {
+      width: 400px;
+      height: 400px;
+      left: 200px;
+      top: 200px;
+    }
   }
 }
