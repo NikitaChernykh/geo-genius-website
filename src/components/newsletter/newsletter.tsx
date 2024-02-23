@@ -40,7 +40,10 @@ const Newsletter = () => {
         onChange={e => setEmail(e.target.value)}
         disabled={status == 'loading'}
       />
-      <PrimaryButton buttonText="Subscribe" isLoading={status == 'loading'} />
+      <PrimaryButton
+        buttonText="Join the Waitlist"
+        isLoading={status == 'loading'}
+      />
       {status === 'success' ? (
         <p className={styles.success}>{responseMsg}</p>
       ) : null}

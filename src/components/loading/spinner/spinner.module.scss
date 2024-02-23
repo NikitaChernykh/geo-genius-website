@@ -1,0 +1,16 @@
+@import './../../../styles/variables.module.scss';
+
+.spinner {
+  color: #e5e7eb;
+  animation: spin 1s linear infinite;
+  fill: #5cc6f7;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

@@ -2,32 +2,47 @@
 
 .primaryButton {
   border: none;
+  border-radius: 12px;
+  font-family: var(--font-kanit);
+  font-size: $semi-bold;
   padding: 0;
   background-color: transparent;
   color: white;
   position: relative;
-  outline: 1px solid orange;
-  width: 100px;
-  height: 50px;
+  height: 60px;
+  line-height: 50px;
   cursor: pointer;
 }
 
 .topLayer {
-  width: 100px;
   height: 50px;
   border-radius: 12px;
-  background-color: green;
+  border: 3px solid #1868ca;
+  background-image: linear-gradient(to left, #2288ff, #5cc6f7);
   position: absolute;
+  width: 98%;
   top: 0;
   left: 0;
+  transition: transform 0.1s ease;
 }
 
 .bottomLayer {
-  width: 100px;
   height: 50px;
   border-radius: 12px;
-  background-color: red;
+  background-image: linear-gradient(to top, #1972dc, #51aede);
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 99%;
+  top: 10px;
+  left: 1px;
+}
+
+.loadingSpinnerFixedSize {
+  width: 30px;
+  height: 30px;
+  // Flexbox centering if your spinner is an SVG or similar
+  margin: 10px auto;
+}
+
+.moveDown {
+  transform: translateY(5px);
 }
