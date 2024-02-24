@@ -5,7 +5,7 @@ import { NextResponse, type NextRequest } from 'next/server'
 // type ResponseData = { message?: string; error?: string; };
 const validateEmail = (email: string) => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  return emailRegex.test(email)
+  return emailRegex.test(email) && email.length > 2
 }
 
 export async function POST(req: NextRequest) {

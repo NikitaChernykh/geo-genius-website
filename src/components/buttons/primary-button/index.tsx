@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import fontKanit from '../../../app/fonts'
 import LoadingSpinner from '../../loading/spinner'
 import styles from './primary-button.module.scss'
 
@@ -36,7 +35,7 @@ const PrimaryButton = ({
       onClick={handleClick}
       {...buttonProps}
       disabled={isLoading}
-      className={`${styles.primaryButton} ${fontKanit.variable} font-sans`}
+      className={`${styles.primaryButton}`}
     >
       <span className={styles.bottomLayer}></span>
       <span
@@ -47,7 +46,7 @@ const PrimaryButton = ({
             <LoadingSpinner />
           </div>
         ) : (
-          buttonText
+          `${buttonText}`
         )}
       </span>
     </button>

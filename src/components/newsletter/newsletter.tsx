@@ -14,7 +14,14 @@ const Newsletter = () => {
 
   const handleSubscribe = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    setStatus('idle')
+    if (email == '') {
+      setStatus('error')
+      return
+    }
+
     setStatus('loading')
+
     try {
       const response = await axios.post('/api/subscribe', { email })
 
@@ -31,25 +38,31 @@ const Newsletter = () => {
     }
   }
 
+  const handleClick = () => {
+    setStatus('idle')
+  }
+
   return (
     <form onSubmit={handleSubscribe} noValidate className={styles.form}>
+      <p className={styles.msg}>
+        {status === 'success' ? `${responseMsg}` : null}
+        {status === 'error' && email !== '' ? `${responseMsg}` : null}
+      </p>
+
       <TextInput
         placeholder="Email"
         type="email"
         value={email}
         onChange={e => setEmail(e.target.value)}
         disabled={status == 'loading'}
+        error={status == 'error'}
       />
+
       <PrimaryButton
         buttonText="Join the Waitlist"
         isLoading={status == 'loading'}
+        onClick={handleClick}
       />
-      {status === 'success' ? (
-        <p className={styles.success}>{responseMsg}</p>
-      ) : null}
-      {status === 'error' ? (
-        <p className={styles.error}>{responseMsg}</p>
-      ) : null}
     </form>
   )
 }

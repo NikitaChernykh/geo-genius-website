@@ -3,15 +3,16 @@
 .primaryButton {
   border: none;
   border-radius: 12px;
-  font-family: var(--font-kanit);
-  font-size: $semi-bold;
   padding: 0;
   background-color: transparent;
-  color: white;
   position: relative;
   height: 60px;
   line-height: 50px;
   cursor: pointer;
+  font-family: var(--font-kanit);
+  color: white;
+  font-weight: $semi-bold;
+  font-size: 1rem;
 }
 
 .topLayer {
@@ -39,7 +40,6 @@
 .loadingSpinnerFixedSize {
   width: 30px;
   height: 30px;
-  // Flexbox centering if your spinner is an SVG or similar
   margin: 10px auto;
 }
 

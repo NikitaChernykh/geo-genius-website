@@ -1,11 +1,7 @@
 @import './../../styles/variables.module.scss';
 
-.error {
-  font-family: var(--font-kanit);
-  color: red;
-}
-
-.success {
+.msg {
+  height: 20px;
   font-family: var(--font-kanit);
   color: #fff;
 }
