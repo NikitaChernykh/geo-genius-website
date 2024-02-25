@@ -11,7 +11,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 10px auto auto;
 }
 
 .title {
@@ -64,6 +64,9 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
+  .content {
+    margin: auto;
+  }
   .title {
     h2 {
       font-size: 2rem;
