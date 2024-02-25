@@ -13,7 +13,7 @@ export default function HomePage() {
     <main className={`homepage`}>
       <div className={styles.background}>
         <div className={styles.content}>
-          <div className={styles.top}>
+          <div>
             <div className={styles.logo}>
               <Image src={logo} alt="geo genius" priority={true} />
             </div>
