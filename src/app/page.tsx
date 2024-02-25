@@ -13,6 +13,7 @@ export default function HomePage() {
   return (
     <main className={`homepage`}>
       <div className={styles.background}>
+        <StarsCanvas />
         <div className={styles.content}>
           <div>
             <div className={styles.logo}>
@@ -32,7 +33,6 @@ export default function HomePage() {
 
           <Newsletter />
         </div>
-        <StarsCanvas />
       </div>
       <About />
       <Footer />
