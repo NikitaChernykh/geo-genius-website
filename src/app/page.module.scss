@@ -4,7 +4,7 @@
   display: flex;
   height: 100vh;
   background-color: $primary-darkest;
-  background-image: url('../assets/bg.png');
+  // background-image: url('../assets/bg.png');
   background-repeat: repeat;
 }
 
@@ -45,6 +45,7 @@
     left: 100px;
     top: 100px;
   }
+  z-index: 30;
 }
 
 .mid {

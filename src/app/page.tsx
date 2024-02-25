@@ -5,6 +5,7 @@ import planet from '../assets/planet.png'
 import About from '../components/about/about'
 import Footer from '../components/footer/footer'
 import Newsletter from '../components/newsletter/newsletter'
+import StarsCanvas from '../components/stars'
 import '../styles/globals.css'
 import styles from './page.module.scss'
 
@@ -31,6 +32,7 @@ export default function HomePage() {
 
           <Newsletter />
         </div>
+        <StarsCanvas />
       </div>
       <About />
       <Footer />
