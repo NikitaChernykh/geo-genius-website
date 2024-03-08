@@ -37,19 +37,50 @@
 
 .planet {
   position: relative;
-  left: 100px;
-  top: 100px;
-  animation: float 5s ease-in-out infinite;
+  animation: rotate 100s ease infinite;
   img {
     width: 200px;
     height: 200px;
-    left: 100px;
-    top: 100px;
+  }
+}
+
+.plane {
+  position: absolute;
+  animation:
+    flyIn 1s ease-in-out forwards,
+    float 5s ease-in-out infinite 1s;
+  top: 100px;
+  img {
+    width: 140px;
+    height: auto;
   }
 }
 
 .mid {
+  position: relative;
   margin: auto;
+}
+
+@keyframes flyIn {
+  0% {
+    transform: translate(30%, -0%) scale(0) rotate(15deg);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translate(-70%, -70%) scale(0.3) rotate(-15deg);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: translate(-80%, -80%) scale(0.5) rotate(-15deg);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    opacity: 1;
+  }
 }
 
 @keyframes float {
@@ -64,6 +95,15 @@
   }
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: $breakpoint-tablet) {
   .content {
     margin: auto;
@@ -75,13 +115,17 @@
   }
 
   .planet {
-    left: 200px;
-    top: 200px;
     img {
       width: 400px;
       height: 400px;
-      left: 200px;
-      top: 200px;
+    }
+  }
+
+  .plane {
+    top: 180px;
+    img {
+      width: 280px;
+      height: auto;
     }
   }
 }

@@ -2,7 +2,7 @@ import { Kanit } from 'next/font/google'
 
 export const metadata = {
   title: 'Geo Genius - Learn Geography',
-  description: 'Best way to learn geography!',
+  description: 'The best way to learn geography!',
 }
 
 export const fontKanit = Kanit({

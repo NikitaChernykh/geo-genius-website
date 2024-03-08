@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import logo from '../assets/logo.png'
+import plane from '../assets/plane.png'
 import planet from '../assets/planet.png'
 import About from '../components/about/about'
 import Footer from '../components/footer/footer'
@@ -21,13 +22,16 @@ export default function HomePage() {
             </div>
 
             <div className={styles.title}>
-              <h2>Best way to learn geography</h2>
+              <h2>The best way to learn geography</h2>
             </div>
           </div>
 
           <div className={styles.mid}>
             <div className={styles.planet}>
               <Image src={planet} alt="planet earth" />
+            </div>
+            <div className={styles.plane}>
+              <Image src={plane} alt="geo" />
             </div>
           </div>
 
