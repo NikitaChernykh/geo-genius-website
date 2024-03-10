@@ -8,7 +8,8 @@ export default function Footer() {
       <div className={styles.divider}></div>
       <div className={styles.content}>
         <div className={styles.copyright}>
-          &copy; {currentYear} Chernika Digital - FZCO &bull;
+          &copy; {currentYear} Chernika Digital - FZCO
+          <span className={styles.spacer}> &bull; </span>
           <a
             href="https://www.chernikadigital.com/privacy-policy"
             target="_blank"
