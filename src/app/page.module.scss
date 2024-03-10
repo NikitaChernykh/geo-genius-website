@@ -37,7 +37,7 @@
 
 .planet {
   position: relative;
-  animation: rotate 100s ease infinite;
+  animation: rotate 250s linear infinite;
   img {
     width: 200px;
     height: 200px;
@@ -47,8 +47,8 @@
 .plane {
   position: absolute;
   animation:
-    flyIn 3s ease-out forwards,
-    float 5s ease-in-out infinite 3s;
+    flyIn 2s ease-out forwards,
+    float 5s ease-in-out infinite 2s;
   top: 100px;
   img {
     width: 140px;
@@ -63,13 +63,13 @@
 
 @keyframes flyIn {
   0% {
-    transform: translate(30%, -0%) scale(0) rotate(15deg);
+    transform: translate(30%, -30%) scale(0) rotate(15deg);
     opacity: 0;
   }
 
   30% {
-    transform: translate(-130%, -130%) scale(0.4) rotate(-15deg);
-    opacity: 0.6;
+    transform: translate(-60%, -100%) scale(0.3) rotate(-15deg);
+    opacity: 1;
   }
 
   100% {

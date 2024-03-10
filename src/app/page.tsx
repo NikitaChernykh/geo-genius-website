@@ -1,10 +1,7 @@
 'use client'
 import Image from 'next/image'
-import logo from '../assets/logo.png'
-import plane from '../assets/plane.png'
-import planet from '../assets/planet.png'
 import About from '../components/about/about'
-import Footer from '../components/footer/footer'
+import Footer from '../components/footer'
 import Newsletter from '../components/newsletter/newsletter'
 import StarsCanvas from '../components/stars'
 import '../styles/globals.css'
@@ -18,7 +15,13 @@ export default function HomePage() {
         <div className={styles.content}>
           <div>
             <div className={styles.logo}>
-              <Image src={logo} alt="geo genius" priority={true} />
+              <Image
+                src="/assets/logo.png"
+                alt="geo genius"
+                width={362}
+                height={256}
+                priority={true}
+              />
             </div>
 
             <div className={styles.title}>
@@ -28,10 +31,20 @@ export default function HomePage() {
 
           <div className={styles.mid}>
             <div className={styles.planet}>
-              <Image src={planet} alt="planet earth" />
+              <Image
+                src="/assets/planet.png"
+                alt="planet earth"
+                width={200}
+                height={200}
+              />
             </div>
             <div className={styles.plane}>
-              <Image src={plane} alt="geo" />
+              <Image
+                src="/assets/plane.png"
+                alt="geo"
+                width={140}
+                height={140}
+              />
             </div>
           </div>
 

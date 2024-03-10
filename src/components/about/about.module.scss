@@ -55,7 +55,7 @@
   margin-left: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-tablet) {
   .columnSection {
     display: flex;
     justify-content: space-between;
