@@ -1,18 +1,22 @@
 @import '../styles/variables.module.scss';
 
+.homepage {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .background {
-  display: flex;
   height: 100vh;
   background-color: $primary-darkest;
-  // background-image: url('../assets/bg.png');
   background-repeat: repeat;
+  display: flex;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   margin: 10px auto auto;
-  z-index: 30;
+  z-index: 50;
 }
 
 .title {
@@ -29,9 +33,10 @@
 .logo {
   margin: auto;
   width: fit-content;
+  animation: zoomIn 0.5s ease-in-out forwards;
   img {
-    width: 362px;
-    height: 259px;
+    max-width: 300px;
+    height: auto;
   }
 }
 
@@ -46,9 +51,10 @@
 
 .plane {
   position: absolute;
+  opacity: 0;
   animation:
-    flyIn 2s ease-out forwards,
-    float 5s ease-in-out infinite 2s;
+    flyIn 2s ease-out 0.5s forwards,
+    float 5s ease-in-out infinite 2.5s;
   top: 100px;
   img {
     width: 140px;
@@ -99,28 +105,56 @@
   }
 }
 
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 @media (min-width: $breakpoint-tablet) {
+  .homepage {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
   .content {
     margin: auto;
-  }
-  .title {
-    h2 {
-      font-size: 2rem;
+    .logo {
+      margin: auto;
+      width: fit-content;
+      img {
+        max-width: max-content;
+        height: auto;
+      }
     }
-  }
+    .planet {
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
 
-  .planet {
-    img {
-      width: 400px;
-      height: 400px;
+    .title {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+
+    .plane {
+      top: 180px;
+      img {
+        width: 280px;
+        height: auto;
+      }
     }
   }
-
-  .plane {
-    top: 180px;
-    img {
-      width: 280px;
-      height: auto;
-    }
+}
+@media (min-width: $breakpoint-laptop-l) {
+  .homepage {
+    max-width: 50%;
+    margin: 0 auto;
   }
 }

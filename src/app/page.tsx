@@ -9,7 +9,7 @@ import styles from './page.module.scss'
 
 export default function HomePage() {
   return (
-    <main className={`homepage`}>
+    <main className={styles.homepage}>
       <div className={styles.background}>
         <StarsCanvas />
         <div className={styles.content}>

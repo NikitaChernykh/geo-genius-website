@@ -1,74 +1,94 @@
 @import './../../styles/variables.module.scss';
 
-.columnSection {
-  display: block;
-  justify-content: space-between;
-  padding: 20px; /* Adjust the padding as needed */
+.about {
+  display: flex;
+  flex-direction: column;
   background-color: $primary-darkest;
-  padding-top: 100px;
-  padding-bottom: 30px;
-}
 
-.column {
-  display: block;
-  text-align: center;
-  width: 100%;
-}
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
-.columnImage {
-  width: 100%;
-  max-width: 300px;
-  height: 200px;
-  border-radius: 12px;
-}
+    .image {
+      max-width: 360px;
+      height: auto;
+    }
 
-.geoImage {
-  width: 100%;
-  max-width: 200px;
-  height: 200px;
-  border-radius: 12px;
-}
+    .title {
+      font-size: 2rem;
+      color: $text-light;
+      font-family: var(--font-kanit);
+      font-weight: $bold;
+      margin: 0;
+      text-align: center;
+    }
 
-.columnTitle {
-  font-size: 2rem;
-  margin-top: 10px; /* Adjust the margin as needed */
-  color: $text-light;
-  text-align: left;
-  font-family: var(--font-kanit);
-  font-weight: $semi-bold;
-}
+    .text {
+      font-size: 1rem;
+      max-width: 500px;
+      color: $text-light;
+      text-align: center;
+      font-family: var(--font-kanit);
+      font-weight: $regular;
+    }
 
-.columnText {
-  font-size: 1rem;
-  color: $text-light;
-  text-align: left;
-  font-family: var(--font-kanit);
-  font-weight: $regular;
-}
+    .geoImage {
+      width: 100%;
+      max-width: 200px;
+      height: 200px;
+      border-radius: 12px;
+    }
+  }
 
-.copyright {
-  color: $text-medium;
-}
-.legalLink {
-  color: $text-medium;
-  margin-right: 2px;
-  margin-left: 2px;
+  .reverseDirection {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: $breakpoint-tablet) {
-  .columnSection {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px; /* Adjust the padding as needed */
-    background-color: #071d36;
-    padding-top: 100px;
-    padding-bottom: 30px;
-  }
+  .about {
+    padding-top: 50px;
+    padding-bottom: 50px;
 
-  .column {
-    flex: 1;
-    margin: 0 10px; /* Adjust the margin for spacing between columns */
-    text-align: center;
-    width: 100px;
+    .section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      .image {
+        min-width: 360px;
+        max-width: fit-content;
+      }
+
+      .title {
+        font-size: 4rem;
+        color: $text-light;
+        font-family: var(--font-kanit);
+        font-weight: $bold;
+        margin: 0;
+        text-align: left;
+      }
+
+      .text {
+        font-size: 1rem;
+        width: 500px;
+        color: $text-light;
+        text-align: left;
+        font-family: var(--font-kanit);
+        font-weight: $regular;
+      }
+
+      .geoImage {
+        width: 100%;
+        max-width: 200px;
+        height: 200px;
+        border-radius: 12px;
+      }
+    }
   }
 }

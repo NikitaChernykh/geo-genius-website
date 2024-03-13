@@ -3,52 +3,58 @@ import styles from './about.module.scss'
 
 export default function About() {
   return (
-    <section className={styles.columnSection}>
-      <div className={styles.column}>
+    <section className={styles.about}>
+      <div className={`${styles.section}`}>
+        <div>
+          {' '}
+          <h2 className={`${styles.title}`}>Learn the World</h2>
+          <p className={`${styles.text}`}>
+            Geo Genius transforming learning into an engaging adventure. As you
+            progress, earn points and advance through levels and continents,
+            enhancing your knowledge of the world and improving your
+            geographical knowledge.
+          </p>
+        </div>
         <Image
-          src="/assets/map.png"
-          className={styles.columnImage}
+          src="/assets/world-map.png"
+          className={styles.image}
           alt="map"
-          width={300}
-          height={200}
+          width={423}
+          height={224}
         />
-        <h2 className={`${styles.columnTitle}`}>Explore the world map</h2>
-        <p className={`${styles.columnText}`}>
-          Explore an entirely new world map designed for geography learning!
-          Each continent serves as a distinct learning section, allowing you to
-          focus on individual regions.
-        </p>
       </div>
-      <div className={styles.column}>
+      <div className={` ${styles.reverseDirection} ${styles.section}`}>
         <Image
-          src="/assets/canada.png"
-          className={styles.columnImage}
-          alt="map"
-          width={300}
-          height={200}
+          src="/assets/continents.png"
+          className={styles.image}
+          alt="continents"
+          width={360}
+          height={256}
         />
-        <h2 className={`${styles.columnTitle}`}>Learn Capitals</h2>
-        <p className={`${styles.columnText}`}>
-          Discover a fun and interactive way to learn the capitals of countries
-          from around the world, where you can test your knowledge of global
-          city names.
-        </p>
+        <div>
+          <h2 className={`${styles.title}`}>Geographical Data</h2>
+          <p className={`${styles.text}`}>
+            We use manual data entry where our countries and capitals are
+            meticulously entered by hand. Using the most up to date knowledge we
+            provide you with the most reliable geographic data.
+          </p>
+        </div>
       </div>
-
-      <div className={styles.column}>
+      <div className={styles.section}>
+        <div>
+          <h2 className={`${styles.title}`}>Say Hi to Geo!</h2>
+          <p className={`${styles.text}`}>
+            Geo is your kind companion who will be supporting your world
+            learning journey.
+          </p>
+        </div>
         <Image
-          src="/assets/geo.png"
-          className={styles.geoImage}
+          src="/assets/geo.svg"
+          className={styles.image}
           alt="geo"
-          width={200}
-          height={200}
+          width={330}
+          height={260}
         />
-        <h2 className={`${styles.columnTitle}`}>Become the Geo Genius</h2>
-        <p className={`${styles.columnText}`}>
-          Pass all the tests and test your knowledge to claim the Geo Genius
-          status as you embark on a journey to master world geography,
-          identifying capitals and more through exciting challenges and quizzes.
-        </p>
       </div>
     </section>
   )
