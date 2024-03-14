@@ -1,0 +1,110 @@
+@import './../../styles/variables.module.scss';
+
+.preview {
+  background-color: $water-blue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .title {
+    font-size: 2rem;
+    color: $primary-darkest;
+    font-family: var(--font-kanit);
+    font-weight: $bold;
+    margin: 0;
+    text-align: center;
+    z-index: 20;
+    position: relative;
+  }
+
+  .text {
+    font-size: 1rem;
+    color: $primary-darkest;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--font-kanit);
+    font-weight: $regular;
+    z-index: 20;
+    position: relative;
+  }
+
+  .image {
+    margin-top: 30px;
+    height: 500px;
+    width: auto;
+    position: relative;
+    z-index: 30;
+  }
+
+  .bgImage {
+    margin-top: 30px;
+    height: 300px;
+    top: 50px;
+    width: auto;
+    z-index: 20;
+    position: relative;
+  }
+
+  .maps {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+  }
+}
+
+@media (min-width: $breakpoint-laptop-l) {
+  .preview {
+    background-color: $water-blue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+
+    .maps {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .title {
+      font-size: 4rem;
+      color: $primary-darkest;
+      font-family: var(--font-kanit);
+      font-weight: $bold;
+      margin: 0;
+      text-align: center;
+    }
+
+    .text {
+      font-size: 1rem;
+      width: 500px;
+      color: $primary-darkest;
+      margin: 0 auto;
+      text-align: center;
+      font-family: var(--font-kanit);
+      font-weight: $regular;
+    }
+
+    .image {
+      width: auto;
+      margin-top: 30px;
+      height: max-content;
+      position: relative;
+    }
+
+    .bgImage {
+      width: auto;
+      margin-top: 30px;
+      height: max-content;
+      z-index: 20;
+      position: relative;
+    }
+  }
+}

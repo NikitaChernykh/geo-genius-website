@@ -1,8 +1,10 @@
 'use client'
 import Image from 'next/image'
-import About from '../components/about/about'
+import About from '../components/about'
+import Container from '../components/container'
 import Footer from '../components/footer'
 import Newsletter from '../components/newsletter/newsletter'
+import Preview from '../components/preview'
 import StarsCanvas from '../components/stars'
 import '../styles/globals.css'
 import styles from './page.module.scss'
@@ -47,12 +49,17 @@ export default function HomePage() {
               />
             </div>
           </div>
-
           <Newsletter />
+          <p className={styles.subText}>Coming soon to iOS and maybe Android</p>
         </div>
       </div>
-      <About />
-      <Footer />
+      <Container>
+        <About />
+      </Container>
+      <Preview />
+      <Container>
+        <Footer />
+      </Container>
     </main>
   )
 }

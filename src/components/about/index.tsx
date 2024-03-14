@@ -28,8 +28,8 @@ export default function About() {
           src="/assets/continents.png"
           className={styles.image}
           alt="continents"
-          width={360}
-          height={256}
+          width={461}
+          height={176}
         />
         <div>
           <h2 className={`${styles.title}`}>Geographical Data</h2>
@@ -49,7 +49,7 @@ export default function About() {
           </p>
         </div>
         <Image
-          src="/assets/geo.svg"
+          src="/assets/geo.png"
           className={styles.image}
           alt="geo"
           width={330}

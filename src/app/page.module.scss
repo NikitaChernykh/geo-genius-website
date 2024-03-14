@@ -1,10 +1,5 @@
 @import '../styles/variables.module.scss';
 
-.homepage {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
 .background {
   height: 100vh;
   background-color: $primary-darkest;
@@ -67,6 +62,12 @@
   margin: auto;
 }
 
+.subText {
+  font-size: 1rem;
+  color: $text-dark;
+  text-align: center;
+}
+
 @keyframes flyIn {
   0% {
     transform: translate(30%, -30%) scale(0) rotate(15deg);
@@ -115,11 +116,6 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
-  .homepage {
-    max-width: 80%;
-    margin: 0 auto;
-  }
-
   .content {
     margin: auto;
     .logo {
@@ -150,11 +146,5 @@
         height: auto;
       }
     }
-  }
-}
-@media (min-width: $breakpoint-laptop-l) {
-  .homepage {
-    max-width: 50%;
-    margin: 0 auto;
   }
 }
