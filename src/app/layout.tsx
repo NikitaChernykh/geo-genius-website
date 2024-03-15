@@ -1,8 +1,12 @@
+import { GoogleTagManager } from '@next/third-parties/google'
 import { Kanit } from 'next/font/google'
 
 export const metadata = {
-  title: 'Geo Genius - Learn Geography',
-  description: 'The best way to learn geography!',
+  title: 'Geo Genius - The best way to learn geography!',
+  description: `Learn geography by playing a game. It's 100% free, fun, and easy.`,
+  twitter: {
+    card: 'summery-large-image',
+  },
 }
 
 export const fontKanit = Kanit({
@@ -20,6 +24,7 @@ export default function RootLayout({ children }: any) {
         className={`${fontKanit.className}`}
       >
         {children}
+        <GoogleTagManager gtmId="GTM-5HM85R4D" />
       </body>
     </html>
   )
