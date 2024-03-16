@@ -51,9 +51,7 @@ export default function HomePage() {
               </div>
             </div>
             <Newsletter />
-            <p className={styles.subText}>
-              Coming soon to iOS and maybe Android
-            </p>
+            <p className={styles.subText}>Coming soon to iOS</p>
           </div>
         </Container>
       </div>
