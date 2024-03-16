@@ -14,44 +14,48 @@ export default function HomePage() {
     <main className={styles.homepage}>
       <div className={styles.background}>
         <StarsCanvas />
-        <div className={styles.content}>
-          <div>
-            <div className={styles.logo}>
-              <Image
-                src="/assets/logo.png"
-                alt="geo genius"
-                width={362}
-                height={256}
-                priority={true}
-              />
+        <Container>
+          <div className={styles.content}>
+            <div>
+              <div className={styles.logo}>
+                <Image
+                  src="/assets/logo.png"
+                  alt="geo genius"
+                  width={362}
+                  height={256}
+                  priority={true}
+                />
+              </div>
+
+              <div className={styles.title}>
+                <h2>The best way to learn geography</h2>
+              </div>
             </div>
 
-            <div className={styles.title}>
-              <h2>The best way to learn geography</h2>
+            <div className={styles.mid}>
+              <div className={styles.planet}>
+                <Image
+                  src="/assets/planet.png"
+                  alt="planet earth"
+                  width={200}
+                  height={200}
+                />
+              </div>
+              <div className={styles.plane}>
+                <Image
+                  src="/assets/plane.png"
+                  alt="geo"
+                  width={140}
+                  height={140}
+                />
+              </div>
             </div>
+            <Newsletter />
+            <p className={styles.subText}>
+              Coming soon to iOS and maybe Android
+            </p>
           </div>
-
-          <div className={styles.mid}>
-            <div className={styles.planet}>
-              <Image
-                src="/assets/planet.png"
-                alt="planet earth"
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className={styles.plane}>
-              <Image
-                src="/assets/plane.png"
-                alt="geo"
-                width={140}
-                height={140}
-              />
-            </div>
-          </div>
-          <Newsletter />
-          <p className={styles.subText}>Coming soon to iOS and maybe Android</p>
-        </div>
+        </Container>
       </div>
       <Container>
         <About />

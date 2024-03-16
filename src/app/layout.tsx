@@ -4,8 +4,36 @@ import { Kanit } from 'next/font/google'
 export const metadata = {
   title: 'Geo Genius - The best way to learn geography!',
   description: `Learn geography by playing a game. It's 100% free, fun, and easy.`,
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
   twitter: {
-    card: 'summery-large-image',
+    card: 'summary_large_image',
+  },
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+    },
+  },
+  openGraph: {
+    title: 'Learn a geography for freeNext.js',
+    description: `Learn geography by playing a game. It's 100% free, fun, and easy.`,
+    url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
+    siteName: 'Geo Genius',
+    images: [
+      {
+        images: '/assets/og-image.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
+      {
+        url: '/assets/og-image.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'Geo Genius iOS app',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
 }
 
