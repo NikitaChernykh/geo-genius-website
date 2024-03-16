@@ -15,7 +15,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'Learn a geography for free',
+    title: 'Learn geography for free',
     description: `Learn geography by playing a game. It's free, fun, and easy.`,
     url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
     siteName: 'Geo Genius',

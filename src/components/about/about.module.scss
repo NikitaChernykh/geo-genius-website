@@ -15,6 +15,7 @@
     .image {
       max-width: 300px;
       height: auto;
+      margin: auto;
     }
 
     .title {
@@ -93,9 +94,9 @@
     .section {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-evenly;
       padding-top: 20px;
-      gap: 200px;
+      gap: 0;
       padding-bottom: 20px;
 
       .image {
