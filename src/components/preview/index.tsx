@@ -20,9 +20,9 @@ export default function Preview() {
     <section className={styles.preview}>
       <div className={`${styles.maps}`}>
         <motion.div
-          initial={{ x: -100 }}
-          whileInView={{ x: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
+          initial={{ y: -100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 2, delay: 0.5 }}
         >
           <Image
             className={`${styles.bgImage}`}
@@ -33,9 +33,9 @@ export default function Preview() {
           />
         </motion.div>
         <motion.div
-          initial={{ x: 100 }}
-          whileInView={{ x: 0 }}
-          transition={{ duration: 1, delay: 1 }}
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 2, delay: 0.5 }}
         >
           <Image
             className={`${styles.bgImage}`}
