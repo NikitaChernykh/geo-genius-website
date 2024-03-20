@@ -52,7 +52,7 @@ export default function RootLayout({ children }: any) {
         className={`${fontKanit.className}`}
       >
         {children}
-        <GoogleTagManager gtmId="GTM-5HM85R4D" />
+        <GoogleTagManager gtmId={`${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`} />
       </body>
     </html>
   )

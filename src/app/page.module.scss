@@ -28,10 +28,10 @@
 .logo {
   margin: auto;
   width: fit-content;
-  animation: zoomIn 0.5s ease-in-out forwards;
   img {
     max-width: 300px;
     height: auto;
+    width: auto;
   }
 }
 
@@ -48,12 +48,13 @@
   position: absolute;
   opacity: 0;
   animation:
-    flyIn 2s ease-out 0.5s forwards,
-    float 5s ease-in-out infinite 2.5s;
+    flyIn 2s ease-out 0.7s forwards,
+    float 5s ease-in-out infinite 2.7s;
   top: 100px;
   img {
     width: 140px;
     height: auto;
+    width: auto;
   }
 }
 

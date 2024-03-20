@@ -1,4 +1,5 @@
 'use client'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import About from '../components/about'
 import Container from '../components/container'
@@ -17,19 +18,31 @@ export default function HomePage() {
         <Container>
           <div className={styles.content}>
             <div>
-              <div className={styles.logo}>
-                <Image
-                  src="/assets/logo.png"
-                  alt="geo genius"
-                  width={362}
-                  height={256}
-                  priority={true}
-                />
-              </div>
+              <motion.div
+                initial={{ scale: 0, opacity: 0, y: 15 }}
+                animate={{ scale: 1, opacity: 1, y: 0 }}
+                transition={{ delay: 0.25 }}
+              >
+                <div className={styles.logo}>
+                  <Image
+                    src="/assets/logo.png"
+                    alt="geo genius"
+                    width={362}
+                    height={256}
+                    priority={true}
+                  />
+                </div>
+              </motion.div>
 
-              <div className={styles.title}>
-                <h2>The best way to learn geography</h2>
-              </div>
+              <motion.div
+                initial={{ scale: 0, opacity: 0, y: 15 }}
+                animate={{ scale: 1, opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+              >
+                <div className={styles.title}>
+                  <h2>The best way to learn geography</h2>
+                </div>
+              </motion.div>
             </div>
 
             <div className={styles.mid}>
@@ -39,6 +52,7 @@ export default function HomePage() {
                   alt="planet earth"
                   width={200}
                   height={200}
+                  priority={true}
                 />
               </div>
               <div className={styles.plane}>
@@ -50,8 +64,15 @@ export default function HomePage() {
                 />
               </div>
             </div>
-            <Newsletter />
-            <p className={styles.subText}>Coming soon to iOS</p>
+            <motion.div
+              initial={{ scale: 0, opacity: 0, y: 15 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              transition={{ delay: 0.9 }}
+            >
+              <Newsletter />
+
+              <p className={styles.subText}>Coming soon to iOS</p>
+            </motion.div>
           </div>
         </Container>
       </div>

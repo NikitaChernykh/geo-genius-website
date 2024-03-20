@@ -1,7 +1,12 @@
+import { gtmEvent } from '../../app/analytics'
 import styles from './footer.module.scss'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+
+  const handleClick = () => {
+    gtmEvent('test', 'click', 'privacy')
+  }
 
   return (
     <footer className={styles.footer}>
@@ -15,6 +20,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             className="legalLink"
+            onClick={handleClick}
           >
             Privacy Policy
           </a>
