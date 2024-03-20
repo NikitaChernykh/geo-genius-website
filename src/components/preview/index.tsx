@@ -27,7 +27,7 @@ export default function Preview() {
           <Image
             className={`${styles.bgImage}`}
             src="/assets/left-map.png"
-            alt="preview"
+            alt="asia"
             width={422}
             height={852}
           />
@@ -40,7 +40,7 @@ export default function Preview() {
           <Image
             className={`${styles.bgImage}`}
             src="/assets/right-map.png"
-            alt="preview"
+            alt="north america"
             width={422}
             height={852}
           />

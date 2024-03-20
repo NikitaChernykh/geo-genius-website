@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     .image {
       max-width: 300px;
@@ -95,9 +95,9 @@
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      padding-top: 20px;
+      padding-top: 100px;
       gap: 0;
-      padding-bottom: 20px;
+      padding-bottom: 100px;
 
       .image {
         min-width: 360px;
